@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/style.min.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    title Мои отзывы о товарах
+  body
+    .account-feedbacks
+      .container
+        header.account-feedbacks__header
+          h1.account-feedbacks__title Мои отзывы о товарах
+        section.account-feedbacks__alert
+          img.alert__img(src="img/alert.svg", alt="alert")
+          p.alert__text Ваши отзывы будут опубликованы на сайте после проверки модератором.
+        main.account-feedbacks__feedbacks
+          .feedbacks__header
+            ul.feedbacks__header-list
+              li.feedbacks__header-title.feedbacks__column-1 Фото
+              li.feedbacks__header-title.feedbacks__column-2 Наименование товара
+              li.feedbacks__header-title.feedbacks__column-3 Ваши отзывы
+              li.feedbacks__header-title.feedbacks__column-4 Статус отзыва
+              li.feedbacks__header-title.feedbacks__column-5 Действия
+          .feedbacks__active
+            .feedbacks__active-img.feedbacks__column-1
+              img.feedbacks__active-image(src="img/drill.jpg", alt="drill")
+            .feedbacks__active-name-product.feedbacks__column-2
+              p.feedbacks__active-name Дрель ударная BOSCH PSB 550 RЕ, БЗП Арт.0603130020
+            .feedbacks__active-content.feedbacks__column-3 
+              .content__stars-rating
+                img.content__full-star(src="img/full-star.svg", alt="full-star")
+                img.content__full-star(src="img/full-star.svg", alt="full-star")
+                img.content__full-star(src="img/full-star.svg", alt="full-star")
+                img.content__full-star(src="img/full-star.svg", alt="full-star")
+                img.content__half-star(src="img/half-star.svg", alt="half-star")
+                span.content__rating 4,6
+              .content__criterions
+                span.content__criterion Впечатление: <b>5</b>
+                span.content__criterion Соответствие: <b>4</b>
+                span.content__criterion Надёжность: <b>5</b>
+              .content__description
+                p.content__text Значит купил я данную модель, поработал неделю, отказал один аккумулятор, заряд держит так себе, НОООООО МАГАЗИН АДЕКВАТНЫЙ, ОБМЕНЯЛИ НА НОВЫЙ, ПРИЧЁМ ПРИВЕЗЛИ ДОМОЙ. С ТАКИМ ПРОДАВЦОМ ПРИЯТНО <span class="content__dots">...</span> <span class="content__text_hidden">ИМЕТЬ ДЕЛО!!!</span>
+                .content__button
+                  button.button__btn(type='button') Подробнее
+                  img.button__img(src="img/arrow.svg", alt="arrow")
+            .feedbacks__active-status.feedbacks__column-4
+              span.status-publication Опубликован
+              p.status-date 1 августа, 2018
+            .feedbacks__active-add.feedbacks__column-5
+              input.add__btn(type="button", value="Дополнить отзыв") 
+          hr.active-add-hr
+          .feedbacks__additional
+            .feedbacks__additional-content
+              p.feedbacks__additional-title Дополненный отзыв
+              .content__description
+                p.content__text Год прошел, работает как пушка! 
+              .additional-content__images
+                a(href="img/additional-img-1-big.jpg" data-lightbox="big-img")
+                  img.additional-content__image(src="img/additional-image-1.jpg" alt="add drill 1")
+                a(href="img/additional-img-2-big.jpg" data-lightbox="big-img")
+                  img.additional-content__image(src="img/additional-image-2.jpg" alt="add drill 2")
+            .feedbacks__additional-status
+              span.status-publication-moder на модерации
+              p.status-date 19 августа, 2018
+          hr.add-not-active-hr
+          .feedbacks__not-active
+            .feedbacks__not-active-img.feedbacks__column-1
+              img.feedbacks__not-active-image(src="img/Shield.jpg", alt="shield")
+            .feedbacks__not-active-name-product.feedbacks__column-2
+              p.feedbacks__not-active-name Декоративный металлический экран на радиатор 3-х секционный 3 ДМЭР
+            .feedbacks__not-active-content.feedbacks__column-3
+              p.content__text-not-active К сожалению, ваш отзыв не прошёл модерацию.
+            .feedbacks__not-active-status.feedbacks__column-4
+              span.status-publication-not-active Не опубликован
+              p.status-date 23 июня, 2019
+          hr.add-not-active-hr
+    script(src="js/script.min.js")
